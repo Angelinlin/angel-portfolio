@@ -13,7 +13,7 @@ export function AboutMe() {
               alt="Profile Picture"
               className="rounded-full w-48 h-48 object-cover"
               height={200}
-              src="/angel.jpg"
+              src="/Angel.jpg"
               style={{
                 aspectRatio: "200/200",
                 objectFit: "cover",

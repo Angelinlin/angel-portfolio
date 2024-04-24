@@ -11,11 +11,11 @@ export default function index() {
         },
         {
             title: "About",
-            href: "/about",
+            href: "#about",
         },
         {
             title: "Art",
-            href: "/art",
+            href: "#art",
         }
     ]
 
