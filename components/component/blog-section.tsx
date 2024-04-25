@@ -22,7 +22,7 @@ export function BlogSection() {
     <div className="flex flex-col text-neutral-300 gap-6 items-start max-w-2xl h-full mx-auto px-4 pt-16">
       <div className="space-y-4">
         <div className="space-y-2">
-          <h1 className="text-xl font-bold tracking-tight lg:text-4xl xl:text-5xl">The Official Angelinlin blog</h1>
+          <h1 className="text-xl font-bold tracking-tight">The Official Angelinlin blog</h1>
         </div>
       </div>
       <div className="space-y-4 md:space-y-6">
