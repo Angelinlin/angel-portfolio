@@ -19,8 +19,8 @@ export function BlogSection() {
   }, [])
 
   return (
-    <div className="flex flex-col text-neutral-300 gap-6 items-start max-w-2xl h-full mx-auto px-4 pt-16">
-      <div className="space-y-4">
+    <div className="flex flex-col text-neutral-300 w-full gap-6 items-start max-w-2xl h-full mx-auto px-4 pt-16">
+      <div className="space-y-4 w-full">
         <div className="space-y-2">
           <h1 className="text-xl font-bold tracking-tight">The Official Angelinlin blog</h1>
         </div>
