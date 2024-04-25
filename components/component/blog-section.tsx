@@ -29,7 +29,9 @@ export function BlogSection() {
         <div className="grid gap-4 lg:gap-8">
           {
             posts.map((post, index) => (
-              <Link key={index} className="space-y-2 hover:text-blue-300" href="#">
+              <Link
+                key={index} className="space-y-2 hover:text-blue-300"
+                href={`blog/${post.id}`}>
                 <h2 className="text-sm font-bold tracking-tight ">
                   {post.title}
                 </h2>
