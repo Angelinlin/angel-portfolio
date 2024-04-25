@@ -91,7 +91,11 @@ export default function HomeSection() {
             </div >
 
             <div className="overflow-hidden pt-24 bg-neutral-900">
-                <svg className="absolute -bottom-20 start-1/2  transform -translate-x-1/2" width="2745" height="488" viewBox="0 0 2745 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <motion.svg
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="absolute -bottom-20 start-1/2  transform -translate-x-1/2" width="2745" height="488" viewBox="0 0 2745 488" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.5 330.864C232.505 403.801 853.749 527.683 1482.69 439.719C2111.63 351.756 2585.54 434.588 2743.87 487" className="stroke-neutral-700/50" stroke="currentColor" />
                     <path d="M0.5 308.873C232.505 381.81 853.749 505.692 1482.69 417.728C2111.63 329.765 2585.54 412.597 2743.87 465.009" className="stroke-neutral-700/50" stroke="currentColor" />
                     <path d="M0.5 286.882C232.505 359.819 853.749 483.701 1482.69 395.738C2111.63 307.774 2585.54 390.606 2743.87 443.018" className="stroke-neutral-700/50" stroke="currentColor" />
@@ -108,7 +112,7 @@ export default function HomeSection() {
                     <path d="M0.5 44.9819C232.505 117.919 853.749 241.801 1482.69 153.837C2111.63 65.8733 2585.54 148.706 2743.87 201.118" className="stroke-neutral-700/50" stroke="currentColor" />
                     <path d="M0.5 22.991C232.505 95.9276 853.749 219.81 1482.69 131.846C2111.63 43.8824 2585.54 126.715 2743.87 179.127" className="stroke-neutral-700/50" stroke="currentColor" />
                     <path d="M0.5 1C232.505 73.9367 853.749 197.819 1482.69 109.855C2111.63 21.8914 2585.54 104.724 2743.87 157.136" className="stroke-neutral-700/50" stroke="currentColor" />
-                </svg>
+                </motion.svg>
 
                 <div className="relative z-10 pb-8">
                     <div className="max-w-5xl px-4 xl:px-0 mx-auto">
@@ -129,13 +133,13 @@ export default function HomeSection() {
                         {
                             [...skillsImages, ...skillsImages].map((skills, i) => (
                                 <Framer key={i}>
-                                    <div className='glassy border rounded-lg py-6'>
-                                        <div key={i} className="px-8">
+                                    <div className='glassy border rounded-lg py-6 text-center text-white flex flex-col gap-2'>
+                                        <div key={i} className="px-10">
                                             {skills.icon}
                                         </div>
-                                        {/* <p className='font-thin z-0 text-xs'>
-                                                    {skills.title}
-                                                </p> */}
+                                        <p className='font-thin z-0 text-xs'>
+                                            {skills.title}
+                                        </p>
                                     </div>
                                 </Framer>
                             ))

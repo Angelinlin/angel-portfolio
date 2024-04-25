@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { NavigationMenuDemo } from "@/components/component/Navbar/NavBar";
 import CursorProvider from "@/components/ui/CursorProvider";
 import { Footer } from "@/components/component/footer";
+import ToasterProv from "@/components/ui/ToasterProv";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -28,11 +29,12 @@ export default function RootLayout({
         fontSans.variable
       )}>
         {/* <CursorProvider> */}
-
-        <NavigationMenuDemo />
-        {children}
-        {/* </CursorProvider> */}
-        <Footer />
+        <ToasterProv>
+          <NavigationMenuDemo />
+          {children}
+          {/* </CursorProvider> */}
+          <Footer />
+        </ToasterProv>
       </body>
     </html>
   );

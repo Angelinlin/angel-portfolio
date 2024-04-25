@@ -45,44 +45,6 @@ export function ImagesAng() {
             </div>
           ))}
         </div>
-        {/* <div className="grid lg:grid-cols-3 gap-10 justify-center">
-          <div className="flex gap-6 flex-col justify-center text-start items-center glassy2">
-            <img
-              alt="Basketball"
-              className="rounded-lg object-cover hover:opacity-50 transition-opacity"
-              src="/Etherfuse.jpeg"
-              width="350"
-            />
-            <div className="grid gap-1 w-full">
-              <h3 className="font-semibold">Etherfuse hackathon</h3>
-              <p className="text-sm leading-none">Second place.</p>
-            </div>
-          </div>
-          <div className="flex gap-6 flex-col justify-center text-start items-center">
-            <img
-              alt="Running"
-              className="rounded-lg object-cover  hover:opacity-50 transition-opacity"
-              src="/Angel.jpg"
-              width="350"
-            />
-            <div className="grid gap-1 w-full">
-              <h3 className="font-semibold">Running</h3>
-              <p className="text-sm leading-none">Everything you need for every mile.</p>
-            </div>
-          </div>
-          <div className="flex gap-6 flex-col justify-center text-start items-center">
-            <img
-              alt="Football"
-              className="rounded-lg object-cover  hover:opacity-50 transition-opacity"
-              src="/Angel.jpg"
-              width="350"
-            />
-            <div className="grid gap-1 w-full">
-              <h3 className="font-semibold">Football</h3>
-              <p className="text-sm leading-none">Command the field in game-ready gear.</p>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   )

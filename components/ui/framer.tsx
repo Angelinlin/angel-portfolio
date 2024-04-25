@@ -8,10 +8,13 @@ export default function Framer({ children }: { children: React.ReactNode }) {
 
     const handleMouse = (e: MouseEvent) => {
         const { clientX, clientY } = e;
-        const { height, width, left, top } = ref.current?.getBoundingClientRect() ?? { height: 0, width: 0, left: 0, top: 0 };
-        const middleX = clientX - (left + width / 2)
-        const middleY = clientY - (top + height / 2)
-        setPosition({ x: middleX, y: middleY })
+        const rect = ref.current?.getBoundingClientRect();
+        if (rect) {
+            const { height, width, left, top } = rect;
+            const middleX = clientX - (left + width / 2)
+            const middleY = clientY - (top + height / 2)
+            setPosition({ x: middleX, y: middleY })
+        }
     }
 
     const reset = () => {
@@ -21,7 +24,6 @@ export default function Framer({ children }: { children: React.ReactNode }) {
     const { x, y } = position;
     return (
         <motion.div
-            style={{ position: "relative" }}
             ref={ref}
             onMouseMove={handleMouse}
             onMouseLeave={reset}

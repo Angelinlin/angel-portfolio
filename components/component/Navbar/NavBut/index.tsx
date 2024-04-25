@@ -10,12 +10,12 @@ export default function index() {
             href: "/",
         },
         {
-            title: "About",
-            href: "#about",
+            title: "Blog",
+            href: "/blog",
         },
         {
-            title: "Art",
-            href: "#art",
+            title: "Works",
+            href: "/works",
         }
     ]
 

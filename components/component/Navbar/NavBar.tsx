@@ -20,12 +20,12 @@ export function NavigationMenuDemo() {
             href: "/",
         },
         {
-            title: "About",
-            href: "#about",
+            title: "Blog",
+            href: "/blog",
         },
         {
-            title: "Art",
-            href: "/art",
+            title: "Works",
+            href: "/works",
         }
     ]
 
@@ -49,18 +49,18 @@ export function NavigationMenuDemo() {
                                 </Link>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <Link href="#about" legacyBehavior passHref>
+                                <Link href="/blog" legacyBehavior passHref>
                                     <NavigationMenuLink className={`${navigationMenuTriggerStyle()}  text-lg bg-neutral-900 text-white`}>
-                                        About
+                                        Blog
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
                         </NavigationMenuList>
                         <NavigationMenuList>
                             <NavigationMenuItem>
-                                <Link href="/art" legacyBehavior passHref>
+                                <Link href="/works" legacyBehavior passHref>
                                     <NavigationMenuLink className={`${navigationMenuTriggerStyle()}  text-lg bg-neutral-900 text-white`}>
-                                        art
+                                        Works
                                     </NavigationMenuLink>
                                 </Link>
                             </NavigationMenuItem>
