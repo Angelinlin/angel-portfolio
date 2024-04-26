@@ -89,7 +89,7 @@ export default function HomeSection() {
                         transition={{ duration: 1.2 }}
                         className="max-w-4xl">
                         <p className="mt-5 text-neutral-400 text-lg">
-                            It is a creative hub where imagination meets craftsmanship to transform ideas into tangible realities. At Preline Agency, we specialize in turning conceptual visions into concrete forms, whether it be through design, artistry, or technological innovation.
+                            Enthusiastic Virtual Environment and Digital Business Engineer, passionate about leveraging technology to drive innovation and improve user experiences. Specialized in developing immersive applications and solutions for digital environments, using NextJS and Web3 to create unique experiences. Expert in project management and team leadership, with a focus on creating captivating designs and virtual connections. Outstanding skills in database implementation and seamless integration of cutting-edge development tools.
                         </p>
                     </motion.div>
                 </div>
