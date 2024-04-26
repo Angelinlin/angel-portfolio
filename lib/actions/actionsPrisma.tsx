@@ -2,7 +2,7 @@
 import { unstable_noStore as noStore } from 'next/cache';
 import db from "../prisma"
 
-export const getPosts = async () => {
+export async function getPosts() {
     noStore();
     try {
         const res = await db.post.findMany({
