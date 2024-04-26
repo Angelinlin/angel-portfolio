@@ -1,7 +1,8 @@
 ---
 title: Rust Is The Future of JavaScript Infrastructure
-subtitle: Why is Rust being used to replace parts of the JavaScript web ecosystem like minification (Terser), transpilation (Babel), formatting (Prettier), bundling (webpack), linting (ESLint), and more? 
+description: Why is Rust being used to replace parts of the JavaScript web ecosystem like minification (Terser), transpilation (Babel), formatting (Prettier), bundling (webpack), linting (ESLint), and more? 
 date: '2021-11-11'
+tags: ["code", "rust"]
 ---
 
 
