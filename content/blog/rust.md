@@ -11,7 +11,6 @@ tags: ["code", "rust"]
 
 Why is Rust now being used to replace parts of the JavaScript web ecosystem like minification (Terser), transpilation (Babel), formatting (Prettier), bundling (webpack), linting (ESLint), and more?
 
-> Note: This post is also available in [Chinese](https://mp.weixin.qq.com/s?__biz=MzkxNDIzNTg4MA==&mid=2247485792&idx=1&sn=682a4dee7ce4d3b47a81baf9ebd7a98a&chksm=c170c1e7f60748f17585d6bfca0cff6edbf71bab95f0a4a1ea0bcf2d43c16d1722666d9fadc1&token=1766743281&lang=zh_CN#rd), [Portuguese](https://codigofonte.com.br/artigos/rust-e-o-futuro-da-infraestrutura-javascript), [Vietnamese](https://www.alanphan.xyz/vi/rush), and [Arabic](https://www.tutomena.com/rust-and-javascript/).
 
 ## What is Rust?
 
@@ -164,6 +163,3 @@ Since this post was written in 2021, there's been even more investment into new 
 
 Further, [Bun 1.0](https://bun.sh/) was released, putting Zig on the map and working to speed up the entire JavaScript ecosystem.
 
----
-
-_Thanks to [Devon Govett](https://twitter.com/devongovett) for reviewing an early draft of this article._

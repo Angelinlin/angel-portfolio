@@ -3,8 +3,10 @@ import Image from "next/image";
 import { TbBrandNextjs } from "react-icons/tb";
 import { TbBrandVercel } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import React from "react";
+import Link from "next/link";
 
 export function AboutMe() {
 
@@ -47,27 +49,34 @@ export function AboutMe() {
               latest industry developments.
             </p>
             <div className="w-auto flex gap-2">
-              <a
+              <Link
                 className="inline-flex items-center rounded border p-1 text-sm leading-4 no-underline border-neutral-700 bg-neutral-800 text-neutral-100 gap-1 hover:bg-purple-300 hover:bg-opacity-20 transform duration-300"
                 href="https://nextjs.org"
                 target="_blank"
               >
                 NextJS <TbBrandNextjs size={16} color='white' />
-              </a>
-              <a
+              </Link>
+              <Link
                 className="inline-flex items-center rounded border p-1 text-sm leading-4 no-underline border-neutral-700 bg-neutral-800 text-neutral-100 gap-1 hover:bg-yellow-300 hover:bg-opacity-20 transform duration-300"
                 href="https://vercel.com"
                 target="_blank"
               >
                 Vercel <TbBrandVercel size={16} color='white' />
-              </a>
-              <a
+              </Link>
+              <Link
                 className="inline-flex items-center rounded border p-1 text-sm leading-4 no-underline border-neutral-700 bg-neutral-800 text-neutral-100 gap-1 hover:bg-sky-300 hover:bg-opacity-20 transform duration-300"
                 href="https://reactjs.org"
                 target="_blank"
               >
                 ReactJS <FaReact size={16} color='white' />
-              </a>
+              </Link>
+              <Link
+                className="inline-flex items-center rounded border p-1 text-sm leading-4 no-underline border-neutral-700 text-neutral-100 gap-1 hover:bg-purple-800 hover:bg-opacity-40 transform duration-300"
+                href="/AngelCV.pdf"
+                target='_blank' download='AngelCV.pdf'
+              >
+                Download CV <FaFileDownload size={16} color='white' />
+              </Link>
             </div>
           </div>
         </motion.div>

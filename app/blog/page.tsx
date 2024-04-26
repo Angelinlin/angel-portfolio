@@ -18,7 +18,7 @@ export default function Blog() {
                         transition={{ duration: 0.5 }}
                         className="space-y-4 w-full">
                         <div className="space-y-2">
-                            <h1 className="text-xl font-bold tracking-tight">The Official Angelinlin blog</h1>
+                            <h1 className="text-xl font-bold tracking-tight">The Official Angelinlin&apos;s blog</h1>
                         </div>
                     </motion.div>
                     <div className="space-y-4 md:space-y-6 w-full">
