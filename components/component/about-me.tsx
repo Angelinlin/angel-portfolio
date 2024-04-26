@@ -1,13 +1,28 @@
+"use client";
 import Image from "next/image";
 import { TbBrandNextjs } from "react-icons/tb";
 import { TbBrandVercel } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
+import { motion } from "framer-motion";
+import React from "react";
 
 export function AboutMe() {
+
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  const handleViewportEnter = () => {
+    setIsVisible(true);
+  }
+
   return (
     <section id="about" className="bg-neutral-900 dark:bg-gray-800 text-white py-12 md:pb-20">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: isVisible ? 1 : 0 }}
+          onViewportEnter={handleViewportEnter}
+          transition={{ duration: 2, delay: 0.5 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="flex justify-center">
             <Image
               alt="Profile Picture"
@@ -55,7 +70,7 @@ export function AboutMe() {
               </a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

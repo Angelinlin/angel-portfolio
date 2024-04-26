@@ -90,10 +90,10 @@
   transition: all 0.5s ease-in-out;
 }
 
-.glassy2 {
-  background: rgba(255, 255, 255, 0);
+.glassyTwo {
+  background: rgba(255, 255, 255, 0.016);
   /* box-shadow: 0 8px 12px 0 rgba(246, 246, 246, 0.37); */
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 10px;
   /* border: 1px solid rgba(255, 255, 255, 0.18); */
